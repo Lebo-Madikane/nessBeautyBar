@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Lebo Madikane">
+        <meta name="description"
+            content="Unleash the beauty of your hair with our top-notch salon services. Our talented stylists specialize in creating personalized looks that accentuate your unique style. Schedule an appointment and let us redefine your beauty.">
+        <title>Booking Form - Nes Beauty Salon</title>
+        <link rel="stylesheet" href="/nessBeautyBar/styles/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        <script src="./scripts.js"></script>
+    </head>
+    <body class="booking-form-body">
+        <div class="background-img">
+            <img src="gallery-1.jpg" alt="gallery-1">
+        </div>
+        <div class="container">
+            <div class="container-text">
+                <h1 class="booking-form-h1">BOOKING FORM</h1>
+                <hr>
+                <p class="booking-form-p top-p">Please fill out this form with the required information</p>
+            </div>
+            <form method="post" action="">
+                <fieldset>
+                    <label for="service">Service:
+                        <select id="service" name="service">
+                            <option value="">(Select here)</option>
+                            <option value="0">None</option>
+                            <option value="1">Wash - R80</option>
+                            <option value="2">Undo Braids & Wash - R150</option>
+                            <option value="3">Treatment - R200</option>
+                            <option value="4">Relaxer - R250</option>
+                            <option value="5">Blow Out - R200</option>
+                            <option value="6">Normal Braids/Twist - R900</option>
+                            <option value="7">Knotless Braids - R850</option>
+                            <option value="8">Goddess Braids - R950</option>
+                            <option value="9">Boheiman Braids - R950</option>
+                            <option value="10">Sew in Weave - R400</option>
+                            <option value="11">Installations - R400</option>
+                            <option value="12">Pony Tail - R350</option>
+                        </select>
+                    </label>
+                    <label>
+                        <select id="add-service" name="service">
+                            <option value="">(Add Service)</option>
+                            <option value="0">None</option>
+                            <option value="1">Wash - R80</option>
+                            <option value="2">Undo Braids & Wash - R150</option>
+                            <option value="3">Treatment - R200</option>
+                            <option value="4">Relaxer - R250</option>
+                            <option value="5">Blow Out - R200</option>
+                            <option value="6">Normal Braids/Twist - R900</option>
+                            <option value="7">Knotless Braids - R850</option>
+                            <option value="8">Goddess Braids - R950</option>
+                            <option value="9">Boheiman Braids - R950</option>
+                            <option value="10">Sew in Weave - R400</option>
+                            <option value="11">Installations - R400</option>
+                            <option value="12">Pony Tail - R350</option>
+                        </select>
+                    </label>
+                    <label for="date">Date:<input id="date" name="date" type="date"></label>
+                    <label for="time">Time:<input id="time" name="time" type="time"></label>
+                    <label for="name">Name:<input id="name" name="name" type="text" required></label>
+                    <label for="email">Email:<input id="email" name="email" type="email"></label>
+                </fieldset>
+                <input type="submit" value="Submit">
+            </form>
+            <p class="payment booking-form-p">Payment: We accept cash and card (In-Store)</p>
+        </div>
+    </body>
+</html>

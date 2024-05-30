@@ -1,0 +1,872 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to bottom right, #eaabb6 15%, #f7e4e8 80%, #ffffff 100%);
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+}
+
+header {
+    width: 90%;
+    min-height: 75px;
+    background-color: rgb(253, 203, 203, 0.45);
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 8px;
+    padding: 0 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 50px;
+    z-index: 99;
+}
+
+header .logo-container {
+    max-width: 20%;
+    display: flex;
+}
+
+header .logo-container .logo {
+    max-width: 170px;
+}
+
+header nav .mainMenu {
+    display: block;
+    min-width: 30%;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: end;
+}
+
+header nav ul li {
+    width: 100%;
+    font-weight: 500;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+header nav ul li:hover {
+    background-color: #ffecf2;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+header nav ul li a {
+    cursor: pointer;
+    color: #000;
+}
+
+header nav .openMenu {
+    display: none;
+    cursor: pointer;
+}
+
+header nav .closeMenu {
+    display: none;
+    cursor: pointer;
+}
+
+.hero {
+    width: 100%; 
+    height: 100vh;
+    background-image: url('/nessBeautyBar/images/nbb-hero-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
+
+.hero .hero-container {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero .hero-text {
+    width: 45%;
+    padding: 5px;
+    position: absolute;
+    left: 14%;
+    text-align: start;
+    z-index: 98;
+}
+
+.hero h1 {
+    width: 98%;
+    font-size: 3.8rem;
+    font-weight: 570;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.hero a {
+    display: inline-block;
+    border: none;
+    border-radius: 7px;
+    padding: 8px;
+    margin: 7px;
+    background-color: rgb(255, 44, 44);
+    color: white;
+    font-size: 0.80em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.hero a:hover {
+    background-color: white;
+    color: rgb(255, 44, 44);
+    cursor: pointer;
+    border: none;
+    transition: 0.5s;
+}
+
+.hero img {
+    width: 57%;
+    position: relative;
+    left: 21%;
+    margin-top: 55px;
+    object-fit: cover;
+}
+
+#about-section {
+    background-image: url('/nessBeautyBar/images/about-us-background.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 520px;
+    background-color: white;
+    padding: 20px 0;
+}
+
+.about-section-info {
+    margin: 10p auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+
+.about-section-info h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 3px;
+    border-bottom: 1.5px solid black;
+}
+
+.about-section-info img {
+    margin: 25px 0;
+    width: 10%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid red;
+}
+
+.about-section-info p {
+    width: 80%;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+#services-section {
+    width: 100%;
+    min-height: 780px;
+    background-color: white;
+    margin: 0px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#services-section h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+#services-section hr {
+    border: 0.5px solid black;
+    width: 100px;
+    margin-top: 5px;
+}
+
+#services-section .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(255px ,1fr));
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 1rem;
+    width: 75%;
+    justify-items: center;
+    text-align: center;
+    margin: 60px auto;
+}
+
+#services-section .service-grid .service {
+    padding: 0px;
+    background: rgb(253, 203, 203, 0.4);
+    width: 100%;
+    min-height: 310px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    border: 2px solid re;
+}
+
+#services-section .service-grid .service img {
+    width: 30%;
+    margin: 35px 0;
+}
+
+#services-section .service-grid .service .service-text {
+    margin: 1px 0px;
+    background: #ffffff;
+    padding: 10px 0;
+    text-align: left;
+    border: 2px solid yello;
+}
+
+.service-grid .service .service-text .service-title {
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #4e4e4e;
+    margin-bottom: 17px;
+    padding-left: 13px;
+}
+
+.service-grid .service .service-text .service-price {
+    display: flex;
+    justify-content: space-between;
+    margin: 4px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    color: #ff003c;
+}
+
+.service-text .service-price span {
+    font-size: small;
+    color: #000;
+}
+
+.service-grid .service .service-text a {
+    text-decoration: none;
+    display: inline-block;
+    border: 0.5px solid black;
+    border-radius: 6px;
+    padding: 7px;
+    margin: 7px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 0.65em;
+    font-weight: 550;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.service-grid .service .service-text a:hover {
+    background-color: rgb(119, 119, 119);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: none;
+}
+
+.gallery {
+    width: 100%;
+    min-height: 410px;
+    padding: 50px 0;
+    background-image: url('/nessBeautyBar/images/nbb-gallery-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gallery h2 {
+    font-size: 2.2rem;
+    font-weight: 550;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.gallery .gallery-img-container {
+    width: 92%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.gallery-img-container img {
+    width: 235px;
+    height: 230px;
+    border-radius: 49%;
+    object-fit: cover;
+    border: 2px solid rgb(255, 240, 240);
+}
+
+.reviews-background {
+    width: 100%;
+    min-height: 280px;
+    padding: 0 20px;
+    background-image: url('/nessBeautyBar/images/about-us-background.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+}
+
+.reviews-background .reviews-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+
+.reviews-container i {
+    padding: 15px 14px;
+    background-color: #0e0e0e;
+    font-size: 30px;
+    color: #ffffff;
+    line-height: 30px;
+    border-radius: 4px;
+    margin: 40px 0px;
+}
+
+.reviews-grid p {
+    font-size: 1rem;
+    margin-top: 2px;
+}
+
+footer {
+    width: 100%;
+    max-width: 1500px;
+    min-height: 260px;
+    padding: 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+    text-align: left;
+    flex-wrap: wrap;
+    line-height: 1.9rem;
+    margin: 0 40px;
+}
+
+.contact-container h4 {
+    font-weight: 400;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ff90a3;
+}
+
+#contact-section .contact-container .contact-info ul li a {
+    font-size: 1.1em;
+    text-decoration: none;
+    color: black;
+}
+
+#contact-section .contact-container .contact-info ul li a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+#contact-section .contact-container .location .location-icon, .location-text {
+    display: none;
+}
+
+.booking-form-body {
+    width: 100%;
+    height: 99vh;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 1em;
+    font-family: Tahoma;
+}
+
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background-img img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.2;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+    min-width: 350px;
+    height: 99%;
+    margin: 10px auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #ff627c;
+    opacity: 0.7;
+    border-radius: 4px;
+}
+
+.container .container-text hr {
+    width: 60%;
+    margin: 0 auto;
+    color: whitesmoke;
+}
+
+.booking-form-h1, .booking-form-p {
+    margin: 2px auto;
+    text-align: center;
+}
+
+.container p {
+    padding: 0 20px;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    margin: 0 auto;
+    line-height: 20px;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 2px solid #ffffff;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+form label #add-service {
+    margin-top: -1px;
+    width: 39%;
+}
+
+input,
+select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+input {
+    background-color: #fff1f1;
+    color: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 36%;
+    min-width: 200px;
+    margin: 1em auto;
+    height: 2.1em;
+    font-size: 1.1rem;
+    background-color: #00440a;
+    border-color: white;
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container .payment {
+    position: relative;
+    top: 18px;
+    font-size: 0.8rem;
+    padding: 0 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        background-image: url('/nessBeautyBar/images/nbb-hero-bg.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header .logo-container {
+        padding: 0;
+    }
+
+    header .logo-container .logo {
+        max-width: 130px;
+        padding-top: 4px;
+    }
+
+    header nav .mainMenu {
+        width: 40%;
+        height: fit-content;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        flex-direction: column;
+        background-color: rgb(255, 221, 221);
+        transition: top 1s ease;
+        display: none;
+        border-radius: 3px;
+    }
+
+    header nav .mainMenu li {
+        border-top: 1px solid #ffedf1;
+        text-align: start;
+    }
+
+    header nav .mainMenu .mainLinks {
+        margin-top: 75px;
+    }
+
+    header nav .openMenu {
+        display: block;
+        font-size: 2em;
+        color: #d15b80;
+        cursor: pointer;
+    }
+
+    header nav .closeMenu {
+        display: block;
+        font-size: 2.3em;
+        color: #d15b80;
+        position: absolute;
+        top: 13px;
+        right: 18px;
+    }
+
+    .hero {
+        width: 100%;
+        min-height: calc(100vh - 60px);
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero .hero-container {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero .hero-container .hero-text {
+        width: 100%;
+        padding: 8px;
+        left: 0;
+        z-index: 98;
+    }
+
+    .hero .hero-container .hero-text h1 {
+        width: 80%;
+        margin: 0;
+        margin-bottom: 2px;
+        font-size: 2.3em;
+        font-weight: 580;
+    }
+
+    .hero .hero-container .hero-text p {
+        font-size: 1em;
+        margin: 0;
+        margin-bottom: 2.5px;
+    }
+
+    .hero .hero-container img {
+        display: none;
+        width: 100%;
+        left: auto;
+        margin-top: auto;
+    }
+
+    #about-section {
+        background-image: url('/nessBeautyBar/images/mblReviewBg.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    #about-section .about-section-info h2 {
+        font-size: 1.5em;
+    }
+
+    #about-section .about-section-info img {
+        width: 30%;
+        border: 2px solid rgb(201, 17, 87);
+    }
+
+    #about-section .about-section-info p {
+        width: 110%;
+        font-size: 1em;
+    }
+
+    #about-section .about-section-info .about-section-p {
+        display: none;
+    }
+
+    #services-section h2 {
+        font-size: 1.5em;
+    }
+
+    #services-section hr {
+        width: 80px;
+    }
+
+    #services-section .service-grid {
+        width: 97%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    #services-section .service-grid .service {
+        width: 100%;
+        min-height: 50%;
+        border-radius: 5px;
+    }
+
+    #services-section .service-grid .service-column {
+        margin-top: 25px;
+    }
+
+    #services-section .service-grid .service-column-2 {
+        margin-bottom: 25px;
+    }
+
+    #services-section .service-grid .service img {
+        margin: 20px;
+        width: 35%;
+    }
+
+    .gallery h2 {
+        font-size: 1.5em;
+    }
+
+    .gallery .gallery-img-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+        width: 80%;
+    }
+
+    .gallery .gallery-img-container img {
+        width: 99%;
+        height: 130px;
+        border-radius: 49%;
+        object-fit: cover;
+        border: 2px solid rgb(255, 240, 240);
+    }
+
+    .gallery .gallery-img-container .img-1 {
+        margin-top: 20px;
+    }
+
+    .reviews-background {
+        width: 100%;
+        height: 325px;
+    }
+
+    .reviews-background {
+        width: 100%;
+        min-height: 280px;
+        padding: 0 10px;
+        background-image: url('/nessBeautyBar/images/mblReviewBg.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: white;
+    }
+
+    .reviews-background .reviews-container .reviews-grid p {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    #contact-section {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 370px;
+    }
+
+    #contact-section .contact-container {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        min-height: 100%;
+    }
+
+    #contact-section .contact-container .contact-info {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    #contact-section .contact-container .contact-info ul {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 1.7em;
+        margin-top: 5px;
+    }
+  
+    #contact-section .contact-container .contact-info ul .contact-details {
+        display: none;
+    }
+
+    #contact-section .contact-container .business-hours {
+        width: 80%;
+        height: f;
+        margin-top: -60px;
+        text-align: center;
+    }
+
+    #contact-section .contact-container .location {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        background: #ffecf2;
+        margin: -60px 0;
+    }
+
+    #contact-section .contact-container .location h4, .location-p {
+        display: none;
+    }
+
+    #contact-section .contact-container .location .location-icon, .location-text {
+        display: inline-block;
+        font-size: 0.8em;
+    }
+
+    .container .booking-form-h1 {
+        font-size: 1.8em;
+    }
+
+    .container .booking-form-p {
+        font-size: 0.7em;
+    }
+
+    .container .top-p {
+        padding-top: 2px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 899px) {
+   
+    header .logo-container .logo-font-1 {
+        font-size: 1.3em;
+    }
+    
+    header .mainMenu {
+        display: none;
+    }
+    
+    header .openMenu {
+        margin-top: 7px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 180%;
+        color: #d15b80;
+    }
+
+    .hero .hero-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+    }
+
+    .hero-container .hero-text {
+        width: 75%;
+        margin-top: -200px;
+        left: auto;
+        text-align: center;
+    }
+    
+    .hero-container .hero-text p {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .hero-container .hero-img {
+        width: 80%;
+        left: auto;
+        margin-top: 615px;
+        z-index: -5;
+    }
+
+    #about-section {
+        z-index: 90;
+        position: relative;
+    }
+
+    .service-grid .service {
+        min-height: 250px;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* Yet to purchase desktop screen size, currently working on laptop */
+}
