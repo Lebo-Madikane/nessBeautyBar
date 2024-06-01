@@ -714,14 +714,10 @@ input[type="submit"] {
 
     .gallery .gallery-img-container img {
         width: 100%;
-        height: 100%;
-        border-radius: 50%;
+        height: 135px;
+        border-radius: 46%;
         object-fit: cover;
         border: 2px solid rgb(255, 240, 240);
-    }
-
-    .gallery .gallery-img-container .img-1 {
-        object-fit: cover;
     }
 
     .reviews-background {
