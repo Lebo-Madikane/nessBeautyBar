@@ -116,7 +116,7 @@ header nav .closeMenu {
     margin-bottom: 5px;
 }
 
-.hero a {
+.hero .hero-container .hero-text a {
     display: inline-block;
     border: none;
     border-radius: 7px;
@@ -137,6 +137,15 @@ header nav .closeMenu {
     cursor: pointer;
     border: none;
     transition: 0.5s;
+}
+
+.hero a:active {
+    background-color: rgb(255, 44, 44);
+    /* Restore the original background color */
+    color: white;
+    /* Restore the original text color */
+    transition: none;
+    /* Optional: remove transition to make the change immediate */
 }
 
 .hero img {
@@ -266,7 +275,7 @@ header nav .closeMenu {
     color: #000;
 }
 
-.service-grid .service .service-text a {
+#services-section .service-grid .service .service-text a {
     text-decoration: none;
     display: inline-block;
     border: 0.5px solid black;
@@ -286,6 +295,12 @@ header nav .closeMenu {
     color: rgb(255, 255, 255);
     cursor: pointer;
     border: none;
+}
+
+.service-grid .service .service-text a:active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: none;
 }
 
 .gallery {
@@ -322,7 +337,7 @@ header nav .closeMenu {
 .gallery-img-container img {
     width: 235px;
     height: 230px;
-    border-radius: 49%;
+    border-radius: 50%;
     object-fit: cover;
     border: 2px solid rgb(255, 240, 240);
 }
@@ -437,7 +452,7 @@ footer {
 .container {
     position: relative;
     width: 50%;
-    height: 97%;
+    height: 98%;
     margin: 10px auto;
     padding: 30px;
     display: flex;
@@ -466,15 +481,14 @@ footer {
 }
 
 form {
-    width: 100%;
-    margin: 0 auto;
+    width: 95%;
+    margin: 0 0 50px 0;
     line-height: 20px;
 }
 
 fieldset {
     border: none;
-    padding: 2rem 0;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid whitesmoke;
 }
 
 label {
@@ -633,6 +647,7 @@ input[type="submit"] {
     #about-section {
         background-image: url('/nessBeautyBar/images/mblReviewBg.png');
         background-position: center;
+        background-position-y: 45%;
         background-repeat: no-repeat;
         /* background-attachment: fixed; */
     }
@@ -647,8 +662,8 @@ input[type="submit"] {
     }
 
     #about-section .about-section-info p {
-        width: 110%;
-        font-size: 1em;
+        width: 100%;
+        font-size: 0.9em;
     }
 
     #about-section .about-section-info .about-section-p {
@@ -699,15 +714,11 @@ input[type="submit"] {
     }
 
     .gallery .gallery-img-container img {
-        width: 99%;
-        height: 130px;
-        border-radius: 49%;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
         object-fit: cover;
         border: 2px solid rgb(255, 240, 240);
-    }
-
-    .gallery .gallery-img-container .img-1 {
-        margin-top: 20px;
     }
 
     .reviews-background {
@@ -822,6 +833,10 @@ input[type="submit"] {
 
     .container .top-p {
         padding-top: 2px;
+    }
+
+    form {
+        height: 61%;
     }
 }
 
