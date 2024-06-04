@@ -31,37 +31,37 @@
                     <label for="service">Service:
                         <select id="service" name="service">
                             <option value="">(Select here)</option>
-                            <option value="0">None</option>
-                            <option value="1">Wash - R70</option>
-                            <option value="2">Undo Braids & Wash - R150</option>
-                            <option value="3">Treatment - R200</option>
-                            <option value="4">Relaxer - R250</option>
-                            <option value="5">Blow Out - R200</option>
-                            <option value="6">Normal Braids/Twist - R900</option>
-                            <option value="7">Knotless Braids - R850</option>
-                            <option value="8">Goddess Braids - R950</option>
-                            <option value="9">Boheiman Braids - R950</option>
-                            <option value="10">Sew in Weave - R400</option>
-                            <option value="11">Installations - R400</option>
-                            <option value="12">Pony Tail - R350</option>
+                            <option value="None - R0">None</option>
+                            <option value="Wash - R70">Wash - R70</option>
+                            <option value="Undo Braids & Wash - R150">Undo Braids & Wash - R150</option>
+                            <option value="Treatment - R200">Treatment - R200</option>
+                            <option value="Relaxer - R250">Relaxer - R250</option>
+                            <option value="Blow Out - R200">Blow Out - R200</option>
+                            <option value="Normal Braids/Twist - R900">Normal Braids/Twist - R900</option>
+                            <option value="Knotless Braids - R850">Knotless Braids - R850</option>
+                            <option value="Goddess Braids - R950">Goddess Braids - R950</option>
+                            <option value="Boheiman Braids - R950">Boheiman Braids - R950</option>
+                            <option value="Sew in Weave - R400">Sew in Weave - R400</option>
+                            <option value="Installations - R400">Installations - R400</option>
+                            <option value="Pony Tail - R350">Pony Tail - R350</option>
                         </select>
                     </label>
                     <label>
-                        <select id="add-service" name="service">
-                            <option value="">(Add Service)</option>
-                            <option value="0">None</option>
-                            <option value="1">Wash - R70</option>
-                            <option value="2">Undo Braids & Wash - R150</option>
-                            <option value="3">Treatment - R200</option>
-                            <option value="4">Relaxer - R250</option>
-                            <option value="5">Blow Out - R200</option>
-                            <option value="6">Normal Braids/Twist - R900</option>
-                            <option value="7">Knotless Braids - R850</option>
-                            <option value="8">Goddess Braids - R950</option>
-                            <option value="9">Boheiman Braids - R950</option>
-                            <option value="10">Sew in Weave - R400</option>
-                            <option value="11">Installations - R400</option>
-                            <option value="12">Pony Tail - R350</option>
+                        <select id="add-service" name="add_service">
+                            <option value="">(Select here)</option>
+                            <option value="None - R0">None</option>
+                            <option value="Wash - R70">Wash - R70</option>
+                            <option value="Undo Braids & Wash - R150">Undo Braids & Wash - R150</option>
+                            <option value="Treatment - R200">Treatment - R200</option>
+                            <option value="Relaxer - R250">Relaxer - R250</option>
+                            <option value="Blow Out - R200">Blow Out - R200</option>
+                            <option value="Normal Braids/Twist - R900">Normal Braids/Twist - R900</option>
+                            <option value="Knotless Braids - R850">Knotless Braids - R850</option>
+                            <option value="Goddess Braids - R950">Goddess Braids - R950</option>
+                            <option value="Boheiman Braids - R950">Boheiman Braids - R950</option>
+                            <option value="Sew in Weave - R400">Sew in Weave - R400</option>
+                            <option value="Installations - R400">Installations - R400</option>
+                            <option value="Pony Tail - R350">Pony Tail - R350</option>
                         </select>
                     </label>
                     <label for="date">Date:<input id="date" name="date" type="date"></label>
@@ -72,5 +72,6 @@
                 <input type="submit" value="Submit">
             </form>
         </div>
+        <?php include 'send_email.php'; ?>
     </body>
 </html>
