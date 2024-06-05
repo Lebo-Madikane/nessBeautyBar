@@ -28,11 +28,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Send email
     if (mail($to, $subject, $message, $headers)) {
-        echo "<div style='position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; background-color: #dff0d8; border: 2px solid #d6e9c6; border-radius: 5px; font-size: 18px; color: #3c763d; text-align: center; z-index: 9999;'>Booking request sent successfully.</div>";
+        echo "<div style='position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; background-color: #dff0d8; border: 2px solid #d6e9c6; border-radius: 5px; font-size: 20px; color: #3c763d; text-align: center; z-index: 9999;'>Booking request sent successfully.</div>";
     } else {
-        echo "<div style='position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; background-color: #f2dede; border: 2px solid #ebccd1; border-radius: 5px; font-size: 18px; color: #a94442; text-align: center; z-index: 9999;'>Failed to send booking request.</div>";
+        echo "<div style='position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; background-color: #f2dede; border: 2px solid #ebccd1; border-radius: 5px; font-size: 20px; color: #a94442; text-align: center; z-index: 9999;'>Failed to send booking request.</div>";
     }
 } else {
-    echo "<div style='position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; background-color: #f2dede; border: 2px solid #ebccd1; border-radius: 5px; font-size: 18px; color: #a94442; text-align: center; z-index: 9999;'>Invalid request method.</div>";
+    echo "<div style='position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; background-color: #f2dede; border: 2px solid #ebccd1; border-radius: 5px; font-size: 20px; color: #a94442; text-align: center; z-index: 9999;'>Invalid request method.</div>";
 }
 ?>
