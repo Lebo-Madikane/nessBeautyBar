@@ -130,23 +130,12 @@ header nav .closeMenu {
     text-transform: uppercase;
     transition: 0.5s;
 }
- 
-.hero .hero-container .hero-text a:link,
-.hero .hero-container .hero-text a:visited {
-    background-color: rgb(255, 44, 44);
-    color: white;
-}
 
 .hero .hero-container .hero-text a:hover {
     background-color: white;
     color: rgb(255, 44, 44);
     cursor: pointer;
     transition: 0.5s;
-}
-
-.hero .hero-container .hero-text a:active {
-    background-color: rgb(255, 44, 44);
-    color: white;
 }
 
 .hero img {
