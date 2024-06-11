@@ -130,22 +130,23 @@ header nav .closeMenu {
     text-transform: uppercase;
     transition: 0.5s;
 }
+ 
+.hero .hero-container .hero-text a:link,
+.hero .hero-container .hero-text a:visited {
+    background-color: rgb(255, 44, 44);
+    color: white;
+}
 
-.hero a:hover {
+.hero .hero-container .hero-text a:hover {
     background-color: white;
     color: rgb(255, 44, 44);
     cursor: pointer;
-    border: none;
     transition: 0.5s;
 }
 
-.hero a:active {
+.hero .hero-container .hero-text a:active {
     background-color: rgb(255, 44, 44);
-    /* Restore the original background color */
     color: white;
-    /* Restore the original text color */
-    transition: none;
-    /* Optional: remove transition to make the change immediate */
 }
 
 .hero img {
@@ -290,17 +291,12 @@ header nav .closeMenu {
     text-transform: uppercase;
 }
 
-.service-grid .service .service-text a:hover {
+#services-section .service-grid .service .service-text a:hover {
     background-color: rgb(119, 119, 119);
     color: rgb(255, 255, 255);
     cursor: pointer;
     border: none;
-}
-
-.service-grid .service .service-text a:active {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    transition: none;
+    transition: 0.5s;
 }
 
 .gallery {
@@ -636,6 +632,27 @@ input[type="submit"] {
         margin-bottom: 2.5px;
     }
 
+    .hero .hero-container .hero-text a {
+        display: inline-block;
+        border: none;
+        border-radius: 7px;
+        padding: 8px;
+        margin: 7px;
+        background-color: rgb(255, 44, 44);
+        color: white;
+        font-size: 0.80em;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+    }
+
+     .hero .hero-container .hero-text a:hover {
+        background-color: rgb(255, 44, 44);
+        color: white;
+        transition: none;
+    }
+
     .hero .hero-container img {
         display: none;
         width: 100%;
@@ -700,6 +717,28 @@ input[type="submit"] {
     #services-section .service-grid .service img {
         margin: 20px;
         width: 35%;
+    }
+
+    #services-section .service-grid .service .service-text a {
+        text-decoration: none;
+        display: inline-block;
+        border: 0.5px solid black;
+        border-radius: 6px;
+        padding: 7px;
+        margin: 7px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        font-size: 0.65em;
+        font-weight: 550;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    #services-section .service-grid .service .service-text a:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        border: 0.5px solid black;
+        transition: none;
     }
 
     .gallery h2 {
